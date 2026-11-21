@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mirror Cove — Spot the Difference</title>
+<link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+<div id="app">
+  <header id="hud">
+    <div class="hud-left">
+      <div id="game-title">MIRROR COVE</div>
+      <div id="scene-name">Scene 1 of 5 · Harbor at Dawn</div>
+    </div>
+    <div class="hud-mid">
+      <div id="remain">7 to find</div>
+      <div id="timer-wrap"><div id="timer-bar"></div><span id="timer-text">1:30</span></div>
+    </div>
+    <div class="hud-right">
+      <div id="score">Score 0</div>
+      <div id="streak">Streak ×0</div>
+      <button id="hint-btn" type="button">Hint (3)</button>
+      <button id="pause-btn" type="button">Pause</button>
+      <button id="sound-btn" type="button">Sound: on</button>
+    </div>
+  </header>
+  <main>
+    <canvas id="game" width="1240" height="600"></canvas>
+  </main>
+  <footer id="foot">
+    <div id="found-dots"></div>
+    <div id="help">Click a difference on either panel · Arrow keys move the cursor · Enter checks · H hint · P pause · M mute</div>
+  </footer>
+  <div id="overlay" class="hidden">
+    <div id="overlay-card">
+      <h1 id="overlay-title"></h1>
+      <p id="overlay-text"></p>
+      <div id="overlay-stats"></div>
+      <button id="overlay-btn" type="button"></button>
+    </div>
+  </div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
